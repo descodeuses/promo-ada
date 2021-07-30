@@ -1,0 +1,36 @@
+.card-title {
+    background: #f9b233;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 5px!important;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    font-size: 13px;
+    text-transform: lowercase;
+
+}
+.card .card-action {
+    text-align: center;
+}
+
+.card-image {
+    max-height: 337px;
+    overflow: hidden;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.brand-logo img {
+    width: 200px;
+    vertical-align: middle;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.card .soraya img, .card .vanessa img {
+    top: -64px;
+{
