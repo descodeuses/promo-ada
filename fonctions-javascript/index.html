@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exploration des différentes fonctions en JavaScript</title>
+    <style>
+body {max-width: 80%;}
+* {margin:1em auto}
+input {width: 5em}
+pre {font-size: 1.5em; display:"inline"}
+
+    </style>
+  </head>
+  <body>
+    <h1>Exploration de Fonctions</h1>
+    <p>Il existe différentes façon d'écrire une fonction en JavaScript. Les style évolue dans le temps ?</p>
+    <p>C'est surtout qu'à force d'écrire toujours la même chose, les langages s'équipent. Il apparait alors ce qu'on appel du sucre syntaxique, c'est à dire de nouvelle façon d'écrire des des portions de code, souvent en permettant de le faire avec moins de mots réservé.</p>
+    <p>Cependant, l'utilisation du signe <pre> => </pre> n'est pas neutre dans le fonctionnement. <strong>Nous vous recommandons donc de privilégier l'utilisation du terme <pre>function</pre> pour le moment</strong></p>
+
+    <section>
+      <input id="premier" type="number"> + <input id="deuxieme" type="number">
+      <button id="calcul">=</button>
+    </section>
+
+    <section>
+      <h1>Plus besoin d'écrire fonction, => suffira</h1>
+      <pre>
+const additionConstEtFleche = (premier, deuxieme) => { return premier + deuxieme; }
+      </pre>
+      <span id="resultatConstEtFleche">
+    </section>
+
+    <section>
+      <h1>La fonction est une variable comme les autres</h1>
+      <pre>
+const additionEnConst = function (premier, deuxieme) { return premier + deuxieme; }
+      </pre>
+      <span id="resultatConst">
+    </section>
+
+    <section>
+      <h1>Le style classique, à l'ancienne</h1>
+      <pre>
+function additionClassique (premier, deuxieme) { return premier + deuxieme; }
+      </pre>
+      <span id="resultatClassique">
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
